@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+@keyframes slide-up-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-slide-up-down {
+  animation: slide-up-down 2s ease-in-out infinite;
+}
